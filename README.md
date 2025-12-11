@@ -8,7 +8,8 @@ Python script for CUPL's course selection system (for Python web request/parsing
 ### 1. 安装 Python 依赖
 脚本依赖 `requests`（网络请求）和 `beautifulsoup4`（网页解析），打开终端/命令行执行以下命令安装：
 ```bash
-pip install requests beautifulsoup4 ````
+pip install requests beautifulsoup4
+````
 ### 2. 抓包工具
 浏览器 F12 开发者工具（Network 面板）
 ### 📝 使用步骤
