@@ -9,9 +9,9 @@ Python script for CUPL's course selection system (for Python web request/parsing
 脚本依赖 `requests`（网络请求）和 `beautifulsoup4`（网页解析），打开终端/命令行执行以下命令安装：
 ```bash
 pip install requests beautifulsoup4
-2. 抓包工具
+### 2. 抓包工具
 浏览器 F12 开发者工具（Network 面板）
-📝 使用步骤
+### 📝 使用步骤
 登录法大教务系统，进入选课页面；
 F12（或鼠标右键点击 "检查"） → Network → 勾选 Preserve log，手动点击「选课」按钮，抓包获取以下参数：
 Cookies（JSESSIONID、SecTs、mpid、GSESSIONID）；
@@ -21,11 +21,11 @@ Cookies（JSESSIONID、SecTs、mpid、GSESSIONID）；
 打开 CUPL_CourseHunter.py，替换 <> 包裹的所有占位符为抓包参数；
 调整 delay_base（基础间隔）和 delay_rand（随机间隔）设置选课速度；
 运行脚本：python CUPL_CourseHunter.py
-✨ 核心功能
+### ✨ 核心功能
 自定义请求间隔，平衡速度与风控；
 智能解析选课结果（名额已满 / 时间冲突 / 风控提示）；
 精准适配法大选课系统接口逻辑。
-⚠️ 注意事项
+### ⚠️ 注意事项
 仅用于 Python 技术学习，严禁违规使用；
 每次运行前需更新 Cookies（有效期短）；
 避免设置过短间隔（≤0.2 秒），防止账号 / IP 封禁；
