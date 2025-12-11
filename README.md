@@ -13,7 +13,7 @@ pip install requests beautifulsoup4
 浏览器 F12 开发者工具（Network 面板）
 📝 使用步骤
 登录法大教务系统，进入选课页面；
-F12（或鼠标右键点击"检查"） → Network → 勾选 Preserve log，手动点击「选课」按钮，抓包获取以下参数：
+F12（或鼠标右键点击 "检查"） → Network → 勾选 Preserve log，手动点击「选课」按钮，抓包获取以下参数：
 Cookies（JSESSIONID、SecTs、mpid、GSESSIONID）；
 选课提交接口 URL（Request URL）；
 课程 ID（Form Data → lesson0）；
